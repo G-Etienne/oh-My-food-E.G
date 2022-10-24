@@ -7,8 +7,100 @@
     <title>oh my food</title>
     <!-- lien fichier css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- lien font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>coucou</h1>
+    <!-- en-tete acceuil -->
+    <header class="heading">
+        <img class="heading__logo" src="./images/logo/ohmyfood.png" alt="logo de 'ho my food'">
+    </header>
+    <!-- localisation / présentation entreprise /fonctionnement -->
+    <aside class="description">
+        <!-- localisation -->
+        <section class="description__loc">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <h2 class="description__loc-city">Paris, Belleville</h2>
+        </section>
+        <!-- descrition entreprise -->
+        <section class="description__company">
+            <h1 class="description__company-title">Réservez le menu qui vous convient</h1>
+            <p class="description__company-sentance">Découvrez des restaurants d'éxception, sélectionnés par nos soins.</p>
+            <a class="description__company-resto" href="#">Explorer nos restaurants</a>
+        </section>
+        <!-- description fonctionement -->
+        <section class="description__function">
+            <h1 class="description__function-title">Fonctionnement</h1>
+            <div class="description__function-1">
+                <p class="description__function-2number">1</p>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p class="description__function-2txt">Choisissez un restaurant</p>
+            </div>
+            <div class="description__function-2">
+                <p class="description__function-2number">2</p>
+                <i class="fa-solid fa-list"></i>
+                <p class="description__function-2txt">Composez votre menu</p>
+            </div>
+            <div class="description__function-3">
+                <p class="description__function-2number">3</p>
+                <i class="fa-solid fa-store"></i>
+                <p class="description__function-2txt">Dégustez au restaurant</p>
+            </div>
+        </section>
+        <!-- restaurants -->
+        <main class="resto">
+            <h1 class="resto__title">Restaurants</h1>
+            <a class="resto-1" href="#">
+                <div class="resto__new">Nouveau</div>
+                <img class="resto__img" src="./images/restaurants/palette.jpg" alt="plats la palette du goût">
+                <h2 class="resto__nom">La palette du goût</h2>
+                <p class="resto__lieu">Ménilmontant</p>
+                <i class="fa-regular fa-heart"></i>
+                <i id="color-heart" class="fa-solid fa-heart resto-heart"></i>
+            </a>
+            <a class="resto-2" href="#">
+                <div class="resto__new">Nouveau</div>
+                <img class="resto__img" src="./images/restaurants/note.jpg" alt="plats la palette du goût">
+                <h2 class="resto__nom">La note enchantée</h2>
+                <p class="resto__lieu">Charonne</p>
+                <i class="fa-regular fa-heart"></i>
+                <i id="color-heart" class="fa-solid fa-heart resto-heart"></i>
+            </a>
+            <a class="resto-3" href="#">
+                <img class="resto__img" src="./images/restaurants/francaise.jpg" alt="plats la palette du goût">
+                <h2 class="resto__nom">À la française</h2>
+                <p class="resto__lieu">Cité Rouge</p>
+                <i class="fa-regular fa-heart"></i>
+                <i id="color-heart" class="fa-solid fa-heart resto-heart"></i>
+            </a>
+            <a class="resto-4" href="#">
+                <img class="resto__img" src="./images/restaurants/delice.jpg" alt="plats la palette du goût">
+                <h2 class="resto__nom">Le délice des sens</h2>
+                <p class="resto__lieu">Folie-Méricourt</p>
+                <i class="fa-regular fa-heart"></i>
+                <i id="color-heart" class="fa-solid fa-heart resto-heart"></i>
+               
+                
+            </a>
+        </main>
+        <!-- pied de page -->
+        <footer class="foot">
+            <h2 class="foot__title">ohmyfood</h2>
+            <a class="foot__propo" href="#">
+                <i class="fa-solid fa-utensils"></i>
+                <p>Proposer un restaurant</p>
+            </a>
+            <a class="foot__part" href="#">
+                <i class="fa-solid fa-handshake"></i>
+                <p>Devenir partenaire</p>
+            </a>
+            <a class="foot__leg" href="#">Mentions légales</a><br/>
+            <a class="foot__mail" href="mailto:mail.bidule@email.com">Contact</a>
+        </footer>
+    </aside>
 </body>
 </html>

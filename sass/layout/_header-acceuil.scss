@@ -1,0 +1,13 @@
+// mise en page en-tete acceuil
+@import "../utils/variables";
+.heading{
+    position: relative;
+    height: 65px;
+    width: 100%;
+    box-shadow: 2px 2px 3px $shadow-head;
+    @include display-center;
+    &__logo{
+        width: 160px;
+        margin-top: 10px;
+    }
+}

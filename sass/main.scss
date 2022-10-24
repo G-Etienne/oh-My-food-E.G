@@ -1,5 +1,11 @@
-@import "./layout/normalize";
 
-h1{
-    color: green;
-}
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./utils/keyframes";
+@import "./composants/new";
+@import "./bases/normalize";
+@import "./bases/typographie";
+@import "./layout/header-acceuil";
+@import "./layout/description-head";
+@import "./layout/restos";
+@import "./layout/foot";

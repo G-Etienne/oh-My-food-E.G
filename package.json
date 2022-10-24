@@ -4,11 +4,12 @@
   "description": "projet 3 d'openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css"
   },
   "repository": {
     "type": "git",
-    "url": "code_projet_3"
+    "url": "https://github.com/G-Etienne/oh-My-food-E.G.git"
   },
   "author": "Etienne Ginet",
   "license": "ISC"

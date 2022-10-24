@@ -1,0 +1,44 @@
+.foot{
+    background-color: $color-back-foot;
+    color: $color-txt-foot;
+    padding: 25px;
+    padding-bottom: 40px;
+    &__title{
+        font-size: 19px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        font-family: 'Shrikhand', cursive;
+    }
+    &__propo,&__part{
+        display: flex;
+        align-items: center;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        i{
+            margin: 0px;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        p{
+            margin: 0px;
+        }
+    }
+    &__part{
+        i{
+            transform: rotate(-45deg);
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    &__leg{
+        display: inline-block;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    a{
+        color: $color-txt-foot;
+    }
+
+}

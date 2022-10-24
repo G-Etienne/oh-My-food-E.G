@@ -1,0 +1,21 @@
+@mixin border-base {
+    border: 2px black solid;   
+}
+
+@mixin display-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin color-btn {
+    background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
+}
+
+@mixin creat-selec ($number) {
+    @for $i from 1 through $number{
+    &-#{$i}{
+        @content
+    }      
+    }
+}
+
