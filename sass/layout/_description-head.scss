@@ -1,5 +1,5 @@
 .description{
-    height: 1000px;
+    height: $size-height-descrip;
     &__loc{
         width: 100%;
         height: 50px;
@@ -7,13 +7,28 @@
         font-size: $size-txt-loc;
         color: lighten(black, 25%);
         @include display-center;
+        @include  responsive(tablette){
+            font-size: $size-txt-loc * 1.2;
+        };
+        @include responsive(desktop){
+            font-size: $size-txt-loc * 1.4;
+        };
         i{
             margin: 0px 20px;
             margin-bottom: 5px;
             font-size: $size-logo-loc;
+            @include  responsive(tablette){
+                font-size: $size-txt-loc * 1.8;
+            };
         }
         &-city{
             margin-right: 10%;
+            @include responsive(tablette){
+                margin-right: 5%;
+            };
+            @include responsive(desktop){
+                margin-right: 0%;
+            };
         }
     }
 
@@ -23,14 +38,17 @@
         justify-content: space-around;
         align-items: center;
         background-color: lighten($color-back, 4%);
-        height: 290px;
+        height: $size-height-compa;
         &-title{
             width: 65%;
             text-align: center;
             font-size: $size-title;
             font-weight: 600;
             margin-top: 30px;
-            margin-bottom: 0px
+            margin-bottom: 0px;
+            @include responsive(tablette){
+                font-size: $size-title * 1.2;
+            };
         }
         &-sentance{
             width: 85%;
@@ -39,6 +57,9 @@
             margin-top: 0px;
             margin-bottom: 30px;
             color: lighten(black, 45%);
+            @include responsive(tablette){
+                font-size: $size-sentance-comp * 1.1;
+            };
         }
         &-resto{
             width: 55%;
@@ -47,8 +68,15 @@
             margin-bottom: 50px;
             border-radius: 50px;
             color: $color-txt-explor;
+            max-width: $max-width-btn;
+            min-width: $min-width-btn;
             @include color-btn;
             @include display-center;
+            @include responsive(tablette){
+                font-size: calc($size-title/1.3);
+                height: $height-btn;
+                max-width: $min-width-btn *1.4;
+            };
         }
     }
     &__function{
@@ -58,16 +86,42 @@
             font-size: $size-title;
             margin-top: 50px;
             margin-bottom: 10px;
+            @include responsive(tablette){
+                font-size: $size-title * 1.2;
+                text-align: center;
+            };
+        }
+        &-liste{
+            @include responsive(tablette){
+                display: flex;
+                justify-content: space-around;
+            };
         }
         @include creat-selec(3){
             display: flex;
             align-items: center;
             margin-left: 10px;
             margin-top: 25px;
-            height: 70px;
+            height: $height-expl;
             border-radius: 25px;
             background-color: lighten($color-back, 4%);
             box-shadow: 4px 4px 15px lighten($shadow-head, 10%);
+            @include responsive(tablette){
+                height: $height-expl-tab;
+                width: $height-expl-tab;
+                border-radius: calc($height-expl-tab / 2);
+                position: relative;
+            };
+            @include responsive(desktop){
+                box-sizing: border-box;
+                width: $height-expl-tab * 1.25;
+                height: $height-expl-tab * 1.25;
+                border-radius: $height-expl-tab * 0.625;
+                flex-direction: column;
+                padding-top: 75px;
+                font-size: $size-expl-txt;
+
+            };
             &:hover{
                 transition: 200ms ease-in-out;
                 background-color: lighten($color-primary, 36%);
@@ -82,8 +136,21 @@
                 color: white;
                 background-color: $color-primary;
                 border-radius: 15px;
-                width: 25px;
-                height: 25px;
+                width: $size-num-expl;
+                height: $size-num-expl;
+                @include responsive(tablette){
+                    width: $size-num-expl + 10px;
+                    height: $size-num-expl + 10px;
+                    border-radius: 20px;
+                    left: 87.5px;
+                    top: 0px;
+                    font-size: 25px;
+                };
+                @include responsive(desktop){
+                    width: $size-num-expl + 15px;
+                    height: $size-num-expl + 15px;
+                    left: 110px;
+                };
                 
 
             }
@@ -92,10 +159,26 @@
                 margin-left: 45px;
                 margin-right: 30px;
                 color: lighten(black, 50%);
+                @include responsive(tablette){
+                    margin-top: 25px;
+                    font-size: 25px;
+                    margin-right: 15px;
+                };
+                @include responsive(desktop){
+                    margin-right: 35px;
+                    font-size: $size-logo-fonc *1.5;
+                    margin-bottom: 0px;
+                };
             }
             &txt{
                 color: lighten(black, 20%);
                 font-weight: bold;
+                @include responsive(tablette){
+                    padding-top: 25px;
+                };
+                @include responsive(desktop){
+                    margin-top: 0px;
+                };
             }
         }
     }

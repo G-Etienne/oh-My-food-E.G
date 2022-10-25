@@ -1,0 +1,30 @@
+.color-heart-color, .color-heart{
+    position: absolute;
+    font-size: $size-heart;
+    bottom: 5px;
+    right: 35px;
+}
+.color-heart{
+    z-index: 1;
+}
+.color-heart-color{
+    z-index: 2;
+    background: linear-gradient(120deg,$color-secondary 0%, $color-primary 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform-origin: bottom;
+    transform: scale(0);
+}
+.color-heart-btn{
+    z-index: 3;
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    height: 50px;
+    width: 50px;
+    &:hover + .color-heart-color
+    {
+        animation: heart both 200ms ease-in-out;
+    }
+}

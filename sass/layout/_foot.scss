@@ -3,11 +3,21 @@
     color: $color-txt-foot;
     padding: 25px;
     padding-bottom: 40px;
+    @include responsive(desktop){
+        padding-bottom: 60px
+    };
     &__title{
-        font-size: 19px;
+        font-size: $size-title-foot;
         margin-top: 0px;
         margin-bottom: 15px;
         font-family: 'Shrikhand', cursive;
+        @include responsive(tablette){
+            font-size: $size-title-foot + 4px;
+        };
+        @include responsive(desktop){
+            margin-left: 40px;
+            margin-bottom: 40px
+        };
     }
     &__propo,&__part{
         display: flex;
@@ -19,7 +29,7 @@
         i{
             margin: 0px;
             margin-right: 10px;
-            font-size: 15px;
+            font-size: $size-logo-foot;
         }
         p{
             margin: 0px;
@@ -39,6 +49,24 @@
     }
     a{
         color: $color-txt-foot;
+    }
+    &__liens{
+        @include responsive(tablette){
+            font-size: $size-sentance-comp;
+        };
+        @include responsive(desktop){
+            display: flex;
+            justify-content: space-around;
+            max-width: $max-width-foot; 
+        };
+    }
+    &__leg, &__mail{
+       @include responsive(desktop){
+        margin-top: 10px;
+       };
+    }
+    &__mail{
+        margin-right: 100px;
     }
 
 }

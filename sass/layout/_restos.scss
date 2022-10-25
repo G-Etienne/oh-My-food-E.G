@@ -1,62 +1,108 @@
 .resto{
     background-color: lighten($color-back, 4%);
-    width: 100%;
+    width: $width-block-resto;
     padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include responsive(tablette){
+        padding-bottom: 70px;
+    };
+    &__block{
+        @include responsive(desktop){
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: $width-block-resto * 0.8;
+            margin: auto;
+        };
+    }
     &__title{
         font-size: $size-title;
-        width: 90%;
+        width: $width-title-bloc-resto;
         margin: auto;
         padding-top: 50px;
         padding-bottom: 5px;
+        @include responsive(tablette){
+            max-width: $Max-width-title-bloc-resto-tab;
+            font-size: $size-title *1.2;
+        };
+        @include responsive(desktop){
+            max-width: $Max-width-title-bloc-resto-desk;
+            text-align: center;
+            font-size: $size-title * 1.5;
+        };
+        
     }
     &__img{
-        width: 100%;
-        height: 180px;
+        width: $width-img-resto;
+        height: $height-img-resto;
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
+        @include responsive(tablette){
+            position: relative;
+            border-radius: 20px 0px 0px 20px;
+            width: 300px;
+        };
+        @include responsive(desktop){
+            width: $width-img-resto;
+            border-radius: 20px 20px 0px 0px;   
+        };
     }
     &__nom{
         font-size: $size-title-two;
         margin-left: 15px;
         margin-bottom: 0px;
+        width: $width-nom-resto;
+        @include responsive(tablette){
+            position: relative;
+            top: 15px;
+            left: 10px;
+        };
+        @include responsive(desktop){
+            top: 0px;
+            left: 0px;
+        };
     }
     &__lieu{
-        font-size: 18px;
+        font-size: $size-txt-lieu-resto;
         margin-left: 15px;
         margin-top: 5px;
         padding-bottom: 15px;
+        @include responsive(tablette){
+            position: relative;
+            top: 105px;
+            left: -155px;
+        };
+        @include responsive(desktop){
+            top: 10px;
+            left: 0px;
+        };
     }
     @include creat-selec(4){
         position: relative;
         display: block;
         background-color: $color-block-resto;
-        width: 90%;
+        width: $width-resto;
         margin: auto;
         margin-top: 20px;
         border-radius: 20px;
         box-shadow: 4px 4px 15px lighten($shadow-head, 10%);
-        i{
-            z-index: 0;
-            display: block;
-            position: absolute;
-            bottom: 35px;
-            right: 25px;
-            font-size: 25px;
-        }
+        @include responsive(tablette){
+            display: flex;
+            max-width: $max-width-tab-resto;
+            margin-top: 40px;
+            box-shadow: 4px 4px 15px lighten($shadow-head, 5%);
+        };
+        @include responsive(desktop){
+            flex-direction: column;  
+            padding-bottom: 10px; 
+            max-width: $max-width-desk-resto;
+            height: $height-resto;
+            margin: 40px;
+            };
     }
     &__new{
         @include new;
-    }
-    #color-heart{
-        z-index: 1;
-        transform-origin: bottom;
-        color: $color-secondary;
-        opacity: 0;
-        transform: scale(0.5);
-        &:hover{
-            opacity: 1;
-            transform: scale(1);
-            transition: transform 600ms, opacity 600ms;
-        }
     }
 }

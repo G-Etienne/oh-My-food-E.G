@@ -2,12 +2,25 @@
 @import "../utils/variables";
 .heading{
     position: relative;
-    height: 65px;
-    width: 100%;
+    height: $height-head;
+    width: $width-head;
     box-shadow: 2px 2px 3px $shadow-head;
     @include display-center;
+    @include responsive(tablette){
+        height: $height-head * 1.45;
+    }
+    @include responsive(desktop){
+        height: $height-head * 2.2;
+    };
     &__logo{
-        width: 160px;
+        width: $width-logo-head;
         margin-top: 10px;
+        @include responsive (tablette){
+            width: $width-logo-head * 1.4;
+            margin-top: 20px
+        };
+        @include responsive(desktop){
+            width: $width-logo-head * 1.8;
+        };
     }
 }
