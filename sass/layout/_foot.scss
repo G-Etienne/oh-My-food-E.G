@@ -1,24 +1,31 @@
+/* ........... pied de page .........*/
+/* _foot.scss */
 .foot{
     background-color: $color-back-foot;
     color: $color-txt-foot;
     padding: 25px;
     padding-bottom: 40px;
+    /* desktop */
     @include responsive(desktop){
         padding-bottom: 60px
     };
+    /* titre oh my food footer */
     &__title{
         font-size: $size-title-foot;
         margin-top: 0px;
         margin-bottom: 15px;
         font-family: 'Shrikhand', cursive;
+        /* tablette */
         @include responsive(tablette){
             font-size: $size-title-foot + 4px;
         };
+        /* desktop */
         @include responsive(desktop){
             margin-left: 40px;
             margin-bottom: 40px
         };
     }
+    /* liens avec un logo */
     &__propo,&__part{
         display: flex;
         align-items: center;
@@ -26,15 +33,18 @@
         padding-top: 0px;
         margin-bottom: 0px;
         margin-top: 0px;
+        /* logo */
         i{
             margin: 0px;
             margin-right: 10px;
             font-size: $size-logo-foot;
         }
+        /* texte du lien */
         p{
             margin: 0px;
         }
     }
+    /* lien partenariat */
     &__part{
         i{
             transform: rotate(-45deg);
@@ -42,29 +52,36 @@
             margin-bottom: 10px;
         }
     }
+    /* lien mention legal */
     &__leg{
         display: inline-block;
         margin-top: 0px;
         margin-bottom: 10px;
     }
+    /* couleur des liens */
     a{
         color: $color-txt-foot;
     }
+    /* bloc contenant tout les liens */
     &__liens{
+        /* tablette */
         @include responsive(tablette){
             font-size: $size-sentance-comp;
         };
+        /* desktop */
         @include responsive(desktop){
             display: flex;
             justify-content: space-around;
             max-width: $max-width-foot; 
         };
     }
+    /* mention legal et contact */
     &__leg, &__mail{
        @include responsive(desktop){
         margin-top: 10px;
        };
     }
+    /* contact */
     &__mail{
         margin-right: 100px;
     }

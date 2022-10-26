@@ -1,16 +1,22 @@
+/* ...........mixins ............. */
+/* _mixin.scss */
+
+/* bordure basique pour repérage des blocs durant le travail */
 @mixin border-base {
     border: 2px black solid;   
 }
-
+/* positionement des éléments du bloc au centre */
 @mixin display-center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* couleur de bouton dégrader rose et violet */
 @mixin color-btn {
     background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
 }
 
+/* mixin pour créer des sélecteur */
 @mixin creat-selec ($number) {
     @for $i from 1 through $number{
     &-#{$i}{

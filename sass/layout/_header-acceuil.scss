@@ -1,4 +1,7 @@
-// mise en page en-tete acceuil
+/* ...... mise en page en-tete acceuil .......*/
+/* _header-acceuil.scss */
+
+/* logo en tete */
 @import "../utils/variables";
 .heading{
     position: relative;
@@ -6,19 +9,24 @@
     width: $width-head;
     box-shadow: 2px 2px 3px $shadow-head;
     @include display-center;
+    /* tablette */
     @include responsive(tablette){
         height: $height-head * 1.45;
     }
+    /* desktop */
     @include responsive(desktop){
         height: $height-head * 2.2;
     };
+    /* image logo ohmyfood */
     &__logo{
         width: $width-logo-head;
         margin-top: 10px;
+        /* tablette */
         @include responsive (tablette){
             width: $width-logo-head * 1.4;
             margin-top: 20px
         };
+        /* desktop */
         @include responsive(desktop){
             width: $width-logo-head * 1.8;
         };

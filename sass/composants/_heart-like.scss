@@ -1,3 +1,10 @@
+
+
+/* ....... bouton like , coeur qui change de couleur et grandit ..... */
+
+/* _heart-like.scss */
+
+/* position et taille coeur */
 .color-heart-color, .color-heart{
     position: absolute;
     font-size: $size-heart;
@@ -7,6 +14,7 @@
 .color-heart{
     z-index: 1;
 }
+/* ajout couleur du coeur et réglage scale et index */
 .color-heart-color{
     z-index: 2;
     background: linear-gradient(120deg,$color-secondary 0%, $color-primary 100%);
@@ -16,6 +24,7 @@
     transform-origin: bottom;
     transform: scale(0);
 }
+/* création d'un bouton invisible placer devant les coeur et qui déclanche l'animation */
 .color-heart-btn{
     z-index: 3;
     position: absolute;

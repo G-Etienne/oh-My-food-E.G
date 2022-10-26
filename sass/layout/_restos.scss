@@ -1,3 +1,7 @@
+/* ............ bloc avec les restaurants ............... */
+/* _resto.scss */
+
+/* section contenant les choix restaurants .....*/
 .resto{
     background-color: lighten($color-back, 4%);
     width: $width-block-resto;
@@ -5,10 +9,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    /* tablette */
     @include responsive(tablette){
         padding-bottom: 70px;
     };
+    /* bloc avec les restaurants */
     &__block{
+        /* desktop */
         @include responsive(desktop){
             display: flex;
             justify-content: center;
@@ -17,16 +24,19 @@
             margin: auto;
         };
     }
+    /* titre de la section restaurant */
     &__title{
         font-size: $size-title;
         width: $width-title-bloc-resto;
         margin: auto;
         padding-top: 50px;
         padding-bottom: 5px;
+        /* tablette */
         @include responsive(tablette){
             max-width: $Max-width-title-bloc-resto-tab;
             font-size: $size-title *1.2;
         };
+        /* desktop */
         @include responsive(desktop){
             max-width: $Max-width-title-bloc-resto-desk;
             text-align: center;
@@ -34,51 +44,61 @@
         };
         
     }
+    /* image de présentation restaurant */
     &__img{
         width: $width-img-resto;
         height: $height-img-resto;
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
+        /* tablette */
         @include responsive(tablette){
             position: relative;
             border-radius: 20px 0px 0px 20px;
             width: 300px;
         };
+        /* desktop */
         @include responsive(desktop){
             width: $width-img-resto;
             border-radius: 20px 20px 0px 0px;   
         };
     }
+    /* noms des restaurants */
     &__nom{
         font-size: $size-title-two;
         margin-left: 15px;
         margin-bottom: 0px;
         width: $width-nom-resto;
+        /* tablette */
         @include responsive(tablette){
             position: relative;
             top: 15px;
             left: 10px;
         };
+        /* desktop */
         @include responsive(desktop){
             top: 0px;
             left: 0px;
         };
     }
+    /* localisation des restaurants */
     &__lieu{
         font-size: $size-txt-lieu-resto;
         margin-left: 15px;
         margin-top: 5px;
         padding-bottom: 15px;
+        /* tablette */
         @include responsive(tablette){
             position: relative;
             top: 105px;
             left: -155px;
         };
+        /* desktop */
         @include responsive(desktop){
             top: 10px;
             left: 0px;
         };
     }
+    /* création de 4 blocs pour les 4 restaurants différents */
     @include creat-selec(4){
         position: relative;
         display: block;
@@ -88,12 +108,14 @@
         margin-top: 20px;
         border-radius: 20px;
         box-shadow: 4px 4px 15px lighten($shadow-head, 10%);
+        /* tablette */
         @include responsive(tablette){
             display: flex;
             max-width: $max-width-tab-resto;
             margin-top: 40px;
             box-shadow: 4px 4px 15px lighten($shadow-head, 5%);
         };
+        /* desktop */
         @include responsive(desktop){
             flex-direction: column;  
             padding-bottom: 10px; 
@@ -102,6 +124,7 @@
             margin: 40px;
             };
     }
+    /* ajouts du l'icone "nouveau" */
     &__new{
         @include new;
     }

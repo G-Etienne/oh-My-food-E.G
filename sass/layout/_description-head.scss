@@ -1,5 +1,12 @@
+/* .......... informations placer sous le logo de tete & explications utilisation site ............... */
+
+/* localisation / titre / phrase / bouton */
+/* _description-head */
+
+/* ..... bloc qui contient la section information ...... */
 .description{
     height: $size-height-descrip;
+    /* bloc avec la localisation */
     &__loc{
         width: 100%;
         height: 50px;
@@ -7,12 +14,15 @@
         font-size: $size-txt-loc;
         color: lighten(black, 25%);
         @include display-center;
+        /* tablette */
         @include  responsive(tablette){
             font-size: $size-txt-loc * 1.2;
         };
+        /* desktop */
         @include responsive(desktop){
             font-size: $size-txt-loc * 1.4;
         };
+        /* logo localisation */
         i{
             margin: 0px 20px;
             margin-bottom: 5px;
@@ -21,6 +31,7 @@
                 font-size: $size-txt-loc * 1.8;
             };
         }
+        /* nom de la ville, localisation */
         &-city{
             margin-right: 10%;
             @include responsive(tablette){
@@ -31,7 +42,7 @@
             };
         }
     }
-
+    /* ...... bloc haut avec le titre, la phrase et le bouton ....... */
     &__company{
         display: flex;
         flex-direction: column;
@@ -39,6 +50,7 @@
         align-items: center;
         background-color: lighten($color-back, 4%);
         height: $size-height-compa;
+        /* titre */
         &-title{
             width: 65%;
             text-align: center;
@@ -46,10 +58,12 @@
             font-weight: 600;
             margin-top: 30px;
             margin-bottom: 0px;
+            /* tablette */
             @include responsive(tablette){
                 font-size: $size-title * 1.2;
             };
         }
+        /* phrase sous le titre */
         &-sentance{
             width: 85%;
             font-size: $size-sentance-comp;
@@ -57,10 +71,12 @@
             margin-top: 0px;
             margin-bottom: 30px;
             color: lighten(black, 45%);
+            /* tablette */
             @include responsive(tablette){
                 font-size: $size-sentance-comp * 1.1;
             };
         }
+        /* boutons pour aller voir les restaurants */
         &-resto{
             width: 55%;
             height: 50px;
@@ -72,6 +88,7 @@
             min-width: $min-width-btn;
             @include color-btn;
             @include display-center;
+            /* tablette */
             @include responsive(tablette){
                 font-size: calc($size-title/1.3);
                 height: $height-btn;
@@ -79,9 +96,11 @@
             };
         }
     }
+    /* ...... Explication sur l'utilisation du site ....... */
     &__function{
         padding-bottom: 45px;
         margin: 20px;
+        /* titre de la section */
         &-title{
             font-size: $size-title;
             margin-top: 50px;
@@ -91,12 +110,15 @@
                 text-align: center;
             };
         }
+        /* bloc contenant les 3 etapes de l'explication */
         &-liste{
+            /* tablette */
             @include responsive(tablette){
                 display: flex;
                 justify-content: space-around;
             };
         }
+        /* ........ blocs contenant les explications ....... */
         @include creat-selec(3){
             display: flex;
             align-items: center;
@@ -106,12 +128,14 @@
             border-radius: 25px;
             background-color: lighten($color-back, 4%);
             box-shadow: 4px 4px 15px lighten($shadow-head, 10%);
+            /* tablette */
             @include responsive(tablette){
                 height: $height-expl-tab;
                 width: $height-expl-tab;
                 border-radius: calc($height-expl-tab / 2);
                 position: relative;
             };
+            /* desktop */
             @include responsive(desktop){
                 box-sizing: border-box;
                 width: $height-expl-tab * 1.25;
@@ -122,6 +146,7 @@
                 font-size: $size-expl-txt;
 
             };
+            /* leger changement de couleur, passage souris */
             &:hover{
                 transition: 200ms ease-in-out;
                 background-color: lighten($color-primary, 36%);
@@ -129,6 +154,7 @@
                     color: $color-primary;
                 }
             }
+            /* chiffre dans le bloc d'explication */
             &number{
                 @include display-center;
                 position: absolute;
@@ -138,6 +164,7 @@
                 border-radius: 15px;
                 width: $size-num-expl;
                 height: $size-num-expl;
+                /* tablette */
                 @include responsive(tablette){
                     width: $size-num-expl + 10px;
                     height: $size-num-expl + 10px;
@@ -146,6 +173,7 @@
                     top: 0px;
                     font-size: 25px;
                 };
+                /* desktop */
                 @include responsive(desktop){
                     width: $size-num-expl + 15px;
                     height: $size-num-expl + 15px;
@@ -154,6 +182,7 @@
                 
 
             }
+            /* logo dans le bloc d'explication */
             i{
                 font-size: $size-logo-fonc;
                 margin-left: 45px;
@@ -170,6 +199,7 @@
                     margin-bottom: 0px;
                 };
             }
+            /* texte dans le bloc d'explication */
             &txt{
                 color: lighten(black, 20%);
                 font-weight: bold;

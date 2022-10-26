@@ -1,3 +1,8 @@
+/* ................ Animation .................... */
+
+/* _anim-load */
+
+/* bloc contenant l'animation */
 .animation{
     position: absolute;
     z-index: 101;
@@ -7,6 +12,7 @@
     display: flex;
     justify-content: center;
     animation: gone 200ms 3000ms ease-in-out both;
+    /* div contenant les cercles anim */
     &__circle{      
         position: absolute;
         top: 15%;
@@ -14,6 +20,7 @@
         height: 250px;
         width: 250px;
         @include display-center;
+        /* plateau bois annim */
         &-1{
             position: absolute;
             z-index: 102;
@@ -26,6 +33,7 @@
             box-shadow: 4px 4px 10px black;
             
         }
+        /* grande assiette anim */
         &-2{
             position: absolute;
             z-index: 103;
@@ -38,6 +46,7 @@
             border: 2px black solid;
             box-shadow: 4px 4px 10px black;
         }
+            /* petite assiette anim */
         &-3{
             z-index: 104;
             height: 75%;
@@ -48,6 +57,7 @@
             box-shadow: inset 4px 4px 10px grey;
             animation: both circle-2 3s ease-in-out;
         }
+        /* nom oh my food en centre des assiette anim */
         &-name{
             position: absolute;
             z-index: 105;

@@ -1,62 +1,76 @@
-//couleur
+// ................... couleur de base
 $color-primary: #9556DC; 
 $color-secondary: #FF79DA;
 $color-three: #99E2D0;  
-//animation
+
+// ............... couleur animation
+// fond
 $color-anim: white;
-$color-circle-1: brown;
+// assiette
 $color-circle-2: white;
 $color-circle-3: white;
 
-//main-wrapper
+// ................ div main-wrapper
+// taille 
 $size-main-w-min: 300px;
-// header
+
+// .................... div  header ohmyfood logo
+// ........ couleur
 $shadow-head: rgb(200, 199, 199);
-//taille
+// ....... taille
 $width-head: 100%;
 $height-head: 65px;
 $width-logo-head: 160px;
-//aside
+
+// ...................... div aside description , explixation, localisation 
+// .......... couleur
 $color-back: #efebeb;
 $color-txt-explor: white;
-$size-height-descrip: 1000px;
+// ........ tailles
+// localisation 
+$size-logo-loc: 17px;
 $size-txt-loc: 11px;
+// compagny presentation
 $size-height-compa: 290px;
+$size-title: 25px;
+$size-sentance-comp: 18px;
+$size-height-descrip: 1000px;
 $max-width-btn: 350px;
 $min-width-btn: 250px;
 $height-btn: 60px;
+// explication fonctionement 
+$size-logo-fonc: 18px;
 $height-expl: 70px;
 $height-expl-tab: 200px;
 $size-expl-txt: 18px;
 $size-num-expl: 25px;
-//main
+
+// ........................ div main resto 
+// ....... couleur
 $color-block-resto: white;
-//taille
+// ........ taille
+$size-title-two: 20px;
 $width-block-resto: 100%;
 $width-title-bloc-resto: 90%; 
 $Max-width-title-bloc-resto-tab: 700px;
 $Max-width-title-bloc-resto-desk: 90%;
-$width-img-resto: 100%;
-$height-img-resto: 180px;
-$width-nom-resto: 150px;
-$size-txt-lieu-resto: 18px;
+// bloc contenant un restaurant
 $width-resto: 90%;
 $max-width-tab-resto: 700px;
 $max-width-desk-resto: 450px;
 $height-resto: 290px;
+$width-img-resto: 100%;
+$height-img-resto: 180px;
+$width-nom-resto: 150px;
+$size-txt-lieu-resto: 18px;
+$size-heart: 25px;
 
-
-//footer
+// ....................... div footer lien 
+//couleur
 $color-back-foot: #303030;
 $color-txt-foot: white;
 //taille
 $size-title-foot: 19px;
 $size-logo-foot: 15px;
 $max-width-foot: 1000px;
-//tailles
-$size-logo-loc: 17px;
-$size-title: 25px;
-$size-title-two: 20px;
-$size-sentance-comp: 18px;
-$size-logo-fonc: 18px;
-$size-heart: 25px;
+

@@ -1,3 +1,5 @@
+/* .......... mixin pour ajouter des media quieries ............... */
+/* _mixin-media.scss */
 @mixin responsive($type) {
     @media screen and (min-width: map-get($breakpoint, $type)) {
         @content
