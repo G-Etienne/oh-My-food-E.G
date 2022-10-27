@@ -6,6 +6,10 @@
 /* ..... bloc qui contient la section information ...... */
 .description{
     height: $size-height-descrip;
+    height: $height-descrip;
+    @include responsive(tablette){
+        height: $height-descrip -40px;
+    };
     /* bloc avec la localisation */
     &__loc{
         width: 100%;

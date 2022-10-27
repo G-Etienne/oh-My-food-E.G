@@ -1,13 +1,55 @@
 /* ............. animation keyframes .............. */
 /* _keyframes.scss */
-
+@keyframes apparition {
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes check {
+    0%{
+        width: 0px;
+        transform: scaleY(.6);
+    }
+    40%{
+        transform: scaleY(1);
+    }
+    100%{
+        width: 80px;
+    }
+}
+@keyframes check-rotate{
+    0%{
+        transform: translateX(0px) scaleX(0) rotate(180deg);
+    }
+    100%{
+        transform: translateX(-20px) scaleX(1) rotate(0deg);
+    }
+}
 /* grossisement du coeur */
 @keyframes heart {
     0%{
+        top: 0px;
         transform: scale(0);
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@keyframes heart-resto {
+    0%{
+        transform: translateY(0px) scale(0);
+    }
+    100%{
+        transform: translateY(0px) scale(1);
     }
 }
 /* animation pour le plateau en bois */

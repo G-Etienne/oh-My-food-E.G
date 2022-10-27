@@ -566,9 +566,15 @@ a {
 /* ..... bloc qui contient la section information ...... */
 .description {
   height: 1000px;
+  height: 775px;
   /* bloc avec la localisation */
   /* ...... bloc haut avec le titre, la phrase et le bouton ....... */
   /* ...... Explication sur l'utilisation du site ....... */
+}
+@media screen and (min-width: 768px) {
+  .description {
+    height: 775px -40px;
+  }
 }
 .description__loc {
   width: 100%;

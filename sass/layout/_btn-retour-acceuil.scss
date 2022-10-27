@@ -1,0 +1,9 @@
+.heading{
+    box-shadow: none;
+    &__retour-acceuil{
+        position: absolute;
+        font-size: $size-logo-retour;
+        top: 23px;
+        left: 30px;
+    }
+}
