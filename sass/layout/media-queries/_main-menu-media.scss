@@ -1,0 +1,138 @@
+@include responsive(tablette){
+    .menu{
+        &-plats{
+            top: 360px;
+            &__title{
+                h1{
+                    font-size: $size-title-menu * 1.2;
+                }
+            }
+        }
+    }
+    .plate__type{
+        &-dish{
+            font-size: $size-name-dish * 1.3;
+        }
+        &-under{
+            width: 55px;
+            height: 4px;
+        }
+        &-food{
+            &-txt{
+                &-title{
+                    font-size: $size-title-food;
+                }
+                &-with{
+                    font-size: $size-sent-with;
+                }
+            }
+            &-price{
+                margin-top: 50px;
+                font-size: $size-price;
+            }
+            i{
+                font-size: $size-logo-check + 5px;
+                top: 33px;
+                right: 5.5%;
+            }
+        }   
+    }
+    .two-plate__type{
+        &-dish{
+            font-size: $size-name-dish * 1.3;
+        }
+        &-under{
+            width: 55px;
+            height: 4px;
+        }
+        &-food{
+            &-txt{
+                &-title{
+                font-size: $size-title-food;
+                }
+                &-with{
+                    font-size: $size-sent-with;
+                }
+            }
+            &-price{
+                margin-top: 50px;
+                font-size: $size-price;
+            }
+            i{
+                font-size: $size-logo-check + 5;
+                top: 33px;
+                right: 5.5%;
+            }
+        }   
+    }
+    .three-plate__type{
+        &-dish{
+            font-size: $size-name-dish * 1.3;
+        }
+        &-under{
+            width: 55px;
+            height: 4px;
+        }
+        &-food{
+            &-txt{
+                &-title{
+                font-size: $size-title-food;
+                }
+                &-with{
+                    font-size: $size-sent-with;
+                }
+            }
+            &-price{
+                margin-top: 50px;
+                font-size: $size-price;
+            }
+            i{
+                font-size: $size-logo-check + 5;
+                top: 33px;
+                right: 5.5%;
+            }
+        }   
+    }
+    .color-heart-btn-resto{
+        right: 50px;
+    }
+    .color-heart-color-resto, .color-heart-resto{
+        right: 55px;
+        font-size: $size-heart * 1.2;
+    }
+    .btn-commande{
+        width: 300px;
+        height: 75px;
+        font-size: 23px;
+        border-radius: 38px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+}
+// desktop
+@include responsive(desktop){
+    .menu{
+        &__image{
+            height: 560px;
+        }
+        &-plats{
+            top: 560px;
+            &__title{
+                h1{
+                    font-size: $size-title-menu * 1.4;
+                    width: 900px;
+                    margin: auto;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    .color-heart-btn-resto{
+        width: 70px;
+        height: 70px;
+    }
+    .color-heart-color-resto, .color-heart-resto{
+        font-size: $size-heart * 1.5;
+    }
+    
+}

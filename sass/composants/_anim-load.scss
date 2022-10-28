@@ -5,8 +5,8 @@
 /* bloc contenant l'animation */
 .animation{
     position: absolute;
+    background-color: white;
     z-index: 101;
-    background-color: $color-anim;
     width: 100%;
     height: 300%;
     display: flex;
@@ -17,8 +17,8 @@
         position: absolute;
         top: 15%;
         z-index: 102;
-        height: 250px;
-        width: 250px;
+        height: $size-circles;
+        width: $size-circles;
         @include display-center;
         /* plateau bois annim */
         &-1{
@@ -61,7 +61,7 @@
         &-name{
             position: absolute;
             z-index: 105;
-            font-size: 30px;
+            font-size: $size-name-anim;
             p{
                 font-family: 'Shrikhand', cursive;
                 animation: food-name 1s 2s ease-in-out both;

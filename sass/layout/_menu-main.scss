@@ -1,3 +1,4 @@
+/* cadre image et fond gris */
 .menu{
     &__image{
         width: 100%;
@@ -18,18 +19,22 @@
             margin-top: 40px;
             h1{
                 font-family: 'Shrikhand', cursive;
-                font-size: 28px;
+                font-size: $size-title-menu;
             }
         }
     }
 }
+/* partie contenant les différentes propositions */
+/* proposition 1 */
 .plate{
+    max-width: 1000px;
+    margin: auto;
     position: relative;
     z-index: 11;
     padding-bottom: 15px;
     &__type{  
         &-dish{
-            font-size: 15px;
+            font-size: $size-name-dish;
             font-weight: normal;
             margin-left: 5%;
             margin-bottom: 5px;
@@ -42,7 +47,7 @@
             margin-left: 5%;
         }
         &-food{
-            background-color: white;
+            background-color: $color-back-food;
             box-shadow: lighten($shadow-head, 10%) 5px 5px 10px;
             width: 90%;
             margin: auto;
@@ -96,14 +101,15 @@
                 z-index: 12;
                 top: 30px;
                 right: 5%;
-                color: white;
-                font-size: 20px;
+                color: $color-logo-check;
+                font-size: $size-logo-check;
                 transform: translateX(0px) scaleX(0) rotate(180deg);
             }
             
         }
     }
 }
+/* partie pour activer l'animation check */
 .plate__btn-anim{
     position: absolute;
     opacity: 0.5;
@@ -118,9 +124,12 @@
             animation: check-rotate 300ms both ease-in-out;
     }
 }
+/* partie pour faire apparaitre les propositions */
 .apparition{
     animation: apparition 1000ms cubic-bezier(.02,.73,.46,1.06) both ;
 }
+/* proposition 1 */
+
 .two{
     &-plate{
         position: relative;
@@ -128,7 +137,7 @@
         padding-bottom: 15px;
         &__type{  
             &-dish{
-                font-size: 15px;
+                font-size: $size-name-dish;
                 font-weight: normal;
                 margin-left: 5%;
                 margin-bottom: 5px;
@@ -141,7 +150,7 @@
                 margin-left: 5%;
             }
             &-food{
-                background-color: white;
+                background-color: $color-back-food;
                 box-shadow: lighten($shadow-head, 10%) 5px 5px 10px;
                 width: 90%;
                 margin: auto;
@@ -195,8 +204,8 @@
                     z-index: 12;
                     top: 30px;
                     right: 5%;
-                    color: white;
-                    font-size: 20px;
+                    color: $color-logo-check;
+                    font-size: $size-logo-check;
                     transform: translateX(0px) scaleX(0) rotate(180deg);
                 }
                 
@@ -204,6 +213,7 @@
         }
     }
 }
+/* partie pour activer l'animation check */
 .two-plate__btn-anim{
     position: absolute;
     opacity: 0.5;
@@ -218,6 +228,7 @@
             animation: check-rotate 300ms both ease-in-out;
     }
 }
+/* partie pour faire apparaitre les propositions */
 .two-apparition{
     animation: apparition 1000ms 200ms cubic-bezier(.02,.73,.46,1.06) both ;
 }
@@ -228,7 +239,7 @@
     padding-bottom: 15px;
     &__type{  
         &-dish{
-            font-size: 15px;
+            font-size: $size-name-dish;
             font-weight: normal;
             margin-left: 5%;
             margin-bottom: 5px;
@@ -241,7 +252,7 @@
             margin-left: 5%;
         }
         &-food{
-            background-color: white;
+            background-color: $color-back-food;
             box-shadow: lighten($shadow-head, 10%) 5px 5px 10px;
             width: 90%;
             margin: auto;
@@ -295,14 +306,15 @@
                 z-index: 12;
                 top: 30px;
                 right: 5%;
-                color: white;
-                font-size: 20px;
+                color: $color-logo-check;
+                font-size: $size-logo-check;
                 transform: translateX(0px) scaleX(0) rotate(180deg);
             }
             
         }
     }
 }
+/* partie pour activer l'animation check */
 .three-plate__btn-anim{
     position: absolute;
     opacity: 0.5;
@@ -317,9 +329,12 @@
             animation: check-rotate 300ms both ease-in-out;
     }
 }
+/* partie pour faire apparaitre les propositions */
+
 .three-apparition{
     animation: apparition 1000ms 400ms cubic-bezier(.02,.73,.46,1.06) both ;
 }
+/* bouton commander en fin de page */
 .btn-commande{
     @include display-center;
     position: relative;

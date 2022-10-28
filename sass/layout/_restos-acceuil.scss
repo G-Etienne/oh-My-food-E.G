@@ -1,0 +1,57 @@
+/* ............ bloc avec les restaurants ............... */
+/* _resto.scss */
+
+/* section contenant les choix restaurants .....*/
+.resto{
+    background-color: lighten($color-back, 4%);
+    width: $width-block-resto;
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* titre de la section restaurant */
+    &__title{
+        font-size: $size-title;
+        width: $width-title-bloc-resto;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 5px;
+        
+    }
+    /* image de présentation restaurant */
+    &__img{
+        width: $width-img-resto;
+        height: $height-img-resto;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    /* noms des restaurants */
+    &__nom{
+        font-size: $size-title-two;
+        margin-left: 15px;
+        margin-bottom: 0px;
+        width: $width-nom-resto;
+    }
+    /* localisation des restaurants */
+    &__lieu{
+        font-size: $size-txt-lieu-resto;
+        margin-left: 15px;
+        margin-top: 5px;
+        padding-bottom: 15px;
+    }
+    /* création de 4 blocs pour les 4 restaurants différents */
+    @include creat-selec(4){
+        position: relative;
+        display: block;
+        background-color: $color-block-resto;
+        width: $width-resto;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 15px lighten($shadow-head, 10%);
+    }
+    /* ajouts du l'icone "nouveau" */
+    &__new{
+        @include new;
+    }
+}

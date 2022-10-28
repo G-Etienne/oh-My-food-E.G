@@ -1,0 +1,10 @@
+@include responsive(tablette){
+    .foot{
+        top: 1700px;
+    }
+}
+@include responsive(desktop){
+    .foot{
+        top: 1880px;
+    }
+}

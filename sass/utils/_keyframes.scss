@@ -1,5 +1,7 @@
 /* ............. animation keyframes .............. */
 /* _keyframes.scss */
+
+/* faire apparaitre les blocs avec le nom des assiettes */
 @keyframes apparition {
     0%{
         transform: translateY(30px);
@@ -13,6 +15,7 @@
         opacity: 1;
     }
 }
+/* fait apparaire le block avec le logo check et fait tourner le logo */
 @keyframes check {
     0%{
         width: 0px;
@@ -36,20 +39,10 @@
 /* grossisement du coeur */
 @keyframes heart {
     0%{
-        top: 0px;
         transform: scale(0);
     }
     100%{
         transform: scale(1);
-    }
-}
-
-@keyframes heart-resto {
-    0%{
-        transform: translateY(0px) scale(0);
-    }
-    100%{
-        transform: translateY(0px) scale(1);
     }
 }
 /* animation pour le plateau en bois */

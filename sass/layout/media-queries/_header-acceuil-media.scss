@@ -1,0 +1,20 @@
+// fichier media querie pour la partie header avec le logo oh my food
+
+@include responsive(tablette){
+    .heading{
+        height: $height-head * 1.45;
+        &__logo{
+            width: $width-logo-head * 1.4;
+            margin-top: 20px;
+        }
+    }
+}
+
+@include responsive(desktop){
+    .heading{
+        height: $height-head * 2.2;
+        &__logo{
+            width: $width-logo-head * 1.8;
+        }
+    }
+}

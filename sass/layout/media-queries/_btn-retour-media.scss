@@ -1,0 +1,13 @@
+@include responsive(tablette){
+    .heading__retour-acceuil{
+        font-size: $size-logo-retour * 1.3;
+        top: 35px;
+        left: 40px;
+    }
+}
+@include responsive(desktop){
+    .heading__retour-acceuil{
+        font-size: $size-logo-retour * 1.8;
+        top: 55px;
+    }
+}

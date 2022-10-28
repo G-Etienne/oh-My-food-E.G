@@ -5,25 +5,12 @@
     color: $color-txt-foot;
     padding: 25px;
     padding-bottom: 40px;
-    /* desktop */
-    @include responsive(desktop){
-        padding-bottom: 60px
-    };
     /* titre oh my food footer */
     &__title{
         font-size: $size-title-foot;
         margin-top: 0px;
         margin-bottom: 15px;
         font-family: 'Shrikhand', cursive;
-        /* tablette */
-        @include responsive(tablette){
-            font-size: $size-title-foot + 4px;
-        };
-        /* desktop */
-        @include responsive(desktop){
-            margin-left: 40px;
-            margin-bottom: 40px
-        };
     }
     /* liens avec un logo */
     &__propo,&__part{
@@ -61,25 +48,6 @@
     /* couleur des liens */
     a{
         color: $color-txt-foot;
-    }
-    /* bloc contenant tout les liens */
-    &__liens{
-        /* tablette */
-        @include responsive(tablette){
-            font-size: $size-sentance-comp;
-        };
-        /* desktop */
-        @include responsive(desktop){
-            display: flex;
-            justify-content: space-around;
-            max-width: $max-width-foot; 
-        };
-    }
-    /* mention legal et contact */
-    &__leg, &__mail{
-       @include responsive(desktop){
-        margin-top: 10px;
-       };
     }
     /* contact */
     &__mail{

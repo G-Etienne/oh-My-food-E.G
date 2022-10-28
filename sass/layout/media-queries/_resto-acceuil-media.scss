@@ -1,0 +1,66 @@
+@include responsive(tablette){
+    .resto{
+        padding-bottom: 70px;
+        &__title{
+            max-width: $Max-width-title-bloc-resto-tab;
+            font-size: $size-title *1.2;
+        }
+        &__img{
+            position: relative;
+            border-radius: 20px 0px 0px 20px;
+            width: 300px;
+        }
+        &__nom{
+            position: relative;
+            top: 15px;
+            left: 10px;
+        }
+        &__lieu{
+            position: relative;
+            top: 105px;
+            left: -155px;
+        }
+        @include creat-selec(4){
+            display: flex;
+            max-width: $max-width-tab-resto;
+            margin-top: 40px;
+            box-shadow: 4px 4px 15px lighten($shadow-head, 5%);
+        }
+    }
+}
+
+@include responsive(desktop){
+    .resto{
+        &__block{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: $width-block-resto * 0.8;
+            margin: auto;
+        }
+        &__title{
+            max-width: $Max-width-title-bloc-resto-desk;
+            text-align: center;
+            font-size: $size-title * 1.5;
+        }
+        &__img{
+            width: $width-img-resto;
+            border-radius: 20px 20px 0px 0px;
+        }
+        &__nom{
+            top: 0px;
+            left: 0px;
+        }
+        &__lieu{
+            top: 10px;
+            left: 0px;
+        }
+        @include creat-selec(4){
+            flex-direction: column;  
+            padding-bottom: 10px; 
+            max-width: $max-width-desk-resto;
+            height: $height-resto;
+            margin: 40px;
+        }
+    }
+}

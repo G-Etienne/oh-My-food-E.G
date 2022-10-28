@@ -7,9 +7,14 @@
 @import "./composants/anim-load";
 @import "./composants/new";
 @import "./composants/heart-like";
-@import "./bases/normalize";
+@import "./vendors/normalize";
 @import "./bases/typographie";
 @import "./layout/header-acceuil";
+@import "./layout/media-queries/header-acceuil-media";
 @import "./layout/description-head";
-@import "./layout/restos";
+@import "./layout/media-queries/description-head-media";
+@import "./layout/restos-acceuil";
+@import "./layout/media-queries/resto-acceuil-media";
 @import "./layout/foot";
+@import "./layout/media-queries/foot-media";
+

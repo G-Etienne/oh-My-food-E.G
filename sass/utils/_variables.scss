@@ -1,79 +1,110 @@
-// ................... couleur de base
+//  ................. variable commune
+
+//utiliser dans : _(menu-)heart-like / _description-head /_mixin
 $color-primary: #9556DC; 
-$color-secondary: #FF79DA;
+
+//utiliser dans : _(menu-)heart-like / _mixin
+$color-secondary: #FF79DA; 
+
+// utiliser dans : _main-menu / _new
 $color-three: #99E2D0;  
 
-// ............... couleur animation
-// fond
-$color-anim: white;
-// assiette
-$color-circle-2: white;
-$color-circle-3: white;
+// utiliser dans _menu-main  /_resto-acceuil
+$color-back: #efebeb; 
 
-// ................ div main-wrapper
-// taille 
-$size-main-w-min: 300px;
+// utiliser dans : _main-menu / _new / _description-head 
+//_header-acceuil /_resto-acceuil / _resto-acceuil-media
+$shadow-head: rgb(200, 199, 199); 
 
-// .................... div  header ohmyfood logo
-// ........ couleur
-$shadow-head: rgb(200, 199, 199);
-// ....... taille
-$size-logo-retour: 20px;
-$width-head: 100%;
-$height-head: 65px;
-$width-logo-head: 160px;
+// utiliser dans : _resto-acceuil  / _resto-acceuil-media
+$size-title: 25px; 
 
-// ...................... div aside description , explixation, localisation 
-// .......... couleur
-$color-back: #efebeb;
-$color-txt-explor: white;
-// ........ tailles
-$height-descrip: 775px;
-// localisation 
-$size-logo-loc: 17px;
-$size-txt-loc: 11px;
-// compagny presentation
-$size-height-compa: 290px;
-$size-title: 25px;
-$size-sentance-comp: 18px;
-$size-height-descrip: 1000px;
-$max-width-btn: 350px;
-$min-width-btn: 250px;
-$height-btn: 60px;
-// explication fonctionement 
-$size-logo-fonc: 18px;
-$height-expl: 70px;
-$height-expl-tab: 200px;
-$size-expl-txt: 18px;
-$size-num-expl: 25px;
-
-// ........................ div main resto 
-// ....... couleur
-$color-block-resto: white;
-// ........ taille
-$size-title-resto: 32px;
-$size-title-two: 20px;
-$width-block-resto: 100%;
-$width-title-bloc-resto: 90%; 
-$Max-width-title-bloc-resto-tab: 700px;
-$Max-width-title-bloc-resto-desk: 90%;
-// bloc contenant un restaurant
-$width-resto: 90%;
-$max-width-tab-resto: 700px;
-$max-width-desk-resto: 450px;
-$height-resto: 290px;
-$width-img-resto: 100%;
-$height-img-resto: 180px;
-$width-nom-resto: 150px;
-$size-txt-lieu-resto: 18px;
+// _heart-like.scss / _menu-heart-like.scss /_main-menu-media
 $size-heart: 25px;
 
-// ....................... div footer lien 
-//couleur
+// ............. variable pas fichier scss
+
+
+// _typographie.scss
+$size-main-w-min: 300px;
+
+// _anim-load.scss
+$size-circles: 250px;
+$size-name-anim: 30px;
+
+$color-circle-2: white;
+
+// _btn-retour-acceuil.scss 
+$size-logo-retour: 20px;  // Et avec (-media)
+
+// _descrition-head.scss
+$height-descrip: 775px;
+$size-txt-loc: 11px;  // Et avec (-media)
+$size-logo-loc: 17px;
+$size-height-compa: 290px;
+$size-sentance-comp: 18px;  // ............... Et avec (_foot-media)
+$max-width-btn: 350px;
+$min-width-btn: 250px;
+$height-expl: 70px;
+$size-num-expl: 25px;   // Et avec (-media)
+$size-logo-fonc: 18px;   // Et avec (-media)
+
+$color-txt-explor: white;
+
+// _foot.scss
+$size-title-foot: 19px;  // Et avec (-media)
+$size-logo-foot: 15px;
+
 $color-back-foot: #303030;
 $color-txt-foot: white;
-//taille
-$size-title-foot: 19px;
-$size-logo-foot: 15px;
+
+
+//_header-acceuil.scss
+$height-head: 65px;  // Et avec (-media)
+$width-head: 100%;
+$width-logo-head: 160px;  // Et avec (-media)
+
+//_menu-main
+$size-title-menu: 28px;  // Et avec (-media)
+$size-name-dish: 15px;  // Et avec (-media)
+$size-title-food: 23px;  // Et avec (-media)
+$size-sent-with: 20px;  // Et avec (-media)
+$size-price: 20px;  // Et avec (-media)
+$size-logo-check: 20px;  // Et avec (-media)
+
+$color-back-food: white;
+$color-logo-check: white;
+
+//_resto-acceuil
+$width-block-resto: 100%;
+$width-title-bloc-resto: 90%; 
+$width-img-resto: 100%;  // Et avec (-media)
+$height-img-resto: 180px;
+$size-title-two: 20px;
+$width-nom-resto: 150px;
+$size-txt-lieu-resto: 18px;
+$width-resto: 90%;
+
+$color-block-resto: white;
+
+// _descrription-head-media
+$height-expl-tab: 200px;
+$size-expl-txt: 18px;
+$height-btn: 60px;
+
+
+// _foot-media.scss
 $max-width-foot: 1000px;
+
+// _resto-acceuil-media
+$Max-width-title-bloc-resto-tab: 700px;
+$max-width-tab-resto: 700px;
+$Max-width-title-bloc-resto-desk: 90%;
+$max-width-desk-resto: 450px;
+$height-resto: 290px;
+
+
+
+
+
 

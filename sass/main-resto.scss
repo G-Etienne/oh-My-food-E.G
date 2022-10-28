@@ -3,16 +3,16 @@
 @import "./utils/mixin";
 @import "./utils/variables";
 @import "./utils/keyframes";
-@import "./composants/rest-heart-like";
-@import "./bases/normalize";
+@import "./composants/menu-heart-like";
+@import "./vendors/normalize";
 @import "./bases/typographie";
 @import "./layout/header-acceuil";
+@import "./layout/media-queries/header-acceuil-media";
 @import "./layout/foot";
+@import "./layout/media-queries/foot-media";
 @import "./layout/menu-main";
-//partie menu 
+@import "./layout/media-queries/main-menu-media";
 @import "./layout/btn-retour-acceuil";
-
-.foot{
-    position: relative;
-    top: 1450px;
-}
+@import "./layout/media-queries/btn-retour-media";
+@import "./layout/foot-menu";
+@import "./layout/media-queries/foot-menu-media";
