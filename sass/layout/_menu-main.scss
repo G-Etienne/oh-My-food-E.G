@@ -1,22 +1,26 @@
 /* cadre image et fond gris */
 .menu{
+    min-width: 350px;
+    position: relative;
     &__image{
         width: 100%;
         height: 300px;
         object-fit: cover;
-        position: absolute;
+        position: relative;
     }
     &-plats{
+        position: relative;
         width: 100%;
-        position: absolute;
-        top: 310px;
+        margin-top: -60px;
         z-index: 10;
         background-color: lighten($color-back, 2%);
         border-radius: 50px 50px 0px 0px;
+        padding-top: 20px;
+        padding-bottom: 40px;
         &__title{
             width: 90%;
             margin: auto;
-            margin-top: 40px;
+            margin-top: 0px;
             h1{
                 font-family: 'Shrikhand', cursive;
                 font-size: $size-title-menu;
@@ -47,6 +51,7 @@
             margin-left: 5%;
         }
         &-food{
+            position: relative;
             background-color: $color-back-food;
             box-shadow: lighten($shadow-head, 10%) 5px 5px 10px;
             width: 90%;
@@ -100,7 +105,7 @@
                 position: absolute;
                 z-index: 12;
                 top: 30px;
-                right: 5%;
+                left: 94.5%;
                 color: $color-logo-check;
                 font-size: $size-logo-check;
                 transform: translateX(0px) scaleX(0) rotate(180deg);
@@ -114,7 +119,7 @@
     position: absolute;
     opacity: 0.5;
     z-index: 13;
-    width: 90%;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     &:hover + .plate__type-food-check{
@@ -128,223 +133,26 @@
 .apparition{
     animation: apparition 1000ms cubic-bezier(.02,.73,.46,1.06) both ;
 }
-/* proposition 1 */
 
-.two{
-    &-plate{
-        position: relative;
-        z-index: 11;
-        padding-bottom: 15px;
-        &__type{  
-            &-dish{
-                font-size: $size-name-dish;
-                font-weight: normal;
-                margin-left: 5%;
-                margin-bottom: 5px;
-            }
-            &-under{
-                height: 3px;
-                width: 50px;
-                background-color: $color-three;
-                margin-top: 0px;
-                margin-left: 5%;
-            }
-            &-food{
-                background-color: $color-back-food;
-                box-shadow: lighten($shadow-head, 10%) 5px 5px 10px;
-                width: 90%;
-                margin: auto;
-                border-radius: 20px;
-                margin-bottom: 15px;
-                &-lien
-                {
-                    display: flex;
-                    justify-content: stretch;
-                }      
-                &-txt{
-                    padding-left: 5%;
-                    width: 88%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    &-title{
-                        margin-top: 15px;
-                        margin-bottom: 0px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                    &-with{
-                        margin-top: 5px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-
-                }  
-                &-price{
-                    margin-top:40px;
-                    padding: 3px;
-                    height: 30%;
-                    width: 8%;
-                    padding-right: 20px;
-                    p{
-                        margin: 0px;
-                    }
-                }
-                &-check{
-                    background-color: $color-three;
-                    border-radius: 0px 20px 20px 0px;
-                    transform-origin: right;
-                    width: 0px;
-                }
-                i{
-                    @include display-center;
-                    position: absolute;
-                    z-index: 12;
-                    top: 30px;
-                    right: 5%;
-                    color: $color-logo-check;
-                    font-size: $size-logo-check;
-                    transform: translateX(0px) scaleX(0) rotate(180deg);
-                }
-                
-            }
-        }
-    }
-}
-/* partie pour activer l'animation check */
-.two-plate__btn-anim{
-    position: absolute;
-    opacity: 0.5;
-    z-index: 13;
-    width: 90%;
-    height: 100%;
-    border-radius: 20px;
-    &:hover + .two-plate__type-food-check{
-        animation: check 300ms both ease-in-out;
-    }
-    &:hover + .two-plate__type-food-check + i{
-            animation: check-rotate 300ms both ease-in-out;
-    }
-}
-/* partie pour faire apparaitre les propositions */
 .two-apparition{
     animation: apparition 1000ms 200ms cubic-bezier(.02,.73,.46,1.06) both ;
 }
 
-.three-plate{
-    position: relative;
-    z-index: 11;
-    padding-bottom: 15px;
-    &__type{  
-        &-dish{
-            font-size: $size-name-dish;
-            font-weight: normal;
-            margin-left: 5%;
-            margin-bottom: 5px;
-        }
-        &-under{
-            height: 3px;
-            width: 50px;
-            background-color: $color-three;
-            margin-top: 0px;
-            margin-left: 5%;
-        }
-        &-food{
-            background-color: $color-back-food;
-            box-shadow: lighten($shadow-head, 10%) 5px 5px 10px;
-            width: 90%;
-            margin: auto;
-            border-radius: 20px;
-            margin-bottom: 15px;
-            &-lien
-            {
-                display: flex;
-                justify-content: stretch;
-            }      
-            &-txt{
-                padding-left: 5%;
-                width: 88%;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                &-title{
-                    margin-top: 15px;
-                    margin-bottom: 0px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                &-with{
-                    margin-top: 5px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
-            }  
-            &-price{
-                margin-top:40px;
-                padding: 3px;
-                height: 30%;
-                width: 8%;
-                padding-right: 20px;
-                p{
-                    margin: 0px;
-                }
-            }
-            &-check{
-                background-color: $color-three;
-                border-radius: 0px 20px 20px 0px;
-                transform-origin: right;
-                width: 0px;
-            }
-            i{
-                @include display-center;
-                position: absolute;
-                z-index: 12;
-                top: 30px;
-                right: 5%;
-                color: $color-logo-check;
-                font-size: $size-logo-check;
-                transform: translateX(0px) scaleX(0) rotate(180deg);
-            }
-            
-        }
-    }
-}
-/* partie pour activer l'animation check */
-.three-plate__btn-anim{
-    position: absolute;
-    opacity: 0.5;
-    z-index: 13;
-    width: 90%;
-    height: 100%;
-    border-radius: 20px;
-    &:hover + .three-plate__type-food-check{
-        animation: check 300ms both ease-in-out;
-    }
-    &:hover + .three-plate__type-food-check + i{
-            animation: check-rotate 300ms both ease-in-out;
-    }
-}
-/* partie pour faire apparaitre les propositions */
-
 .three-apparition{
     animation: apparition 1000ms 400ms cubic-bezier(.02,.73,.46,1.06) both ;
 }
-/* bouton commander en fin de page */
+
+
+.four-apparition{
+    animation: apparition 1000ms 600ms cubic-bezier(.02,.73,.46,1.06) both ;
+}
 .btn-commande{
     @include display-center;
-    position: relative;
-    height: 50px;
-    width: 200px;
-    margin: auto;
     @include color-btn;
-    margin-top: 10px;
-    margin-bottom: 40px;
     color: white;
-    border-radius: 30px;
-    box-shadow: $shadow-head 5px 5px 10px;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 10px;
 }

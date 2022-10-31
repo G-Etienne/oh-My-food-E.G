@@ -2,7 +2,7 @@
 
 @include responsive(tablette){
     .description{
-        height: $height-descrip -40px;
+        height: 735px;
         &__loc{
             font-size: $size-txt-loc * 1.2;
             i{
