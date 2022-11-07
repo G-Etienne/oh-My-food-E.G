@@ -1,20 +1,20 @@
 
+@import "./utils/variables";
+@import "./utils/maps";
 @import "./utils/mixin";
 @import "./utils/mixin-media";
-@import "./utils/variables";
 @import "./utils/keyframes";
-@import "./utils/maps";
+@import "./vendors/normalize";
+@import "./bases/typographie";
 @import "./composants/anim-load";
 @import "./composants/new";
 @import "./composants/heart-like";
-@import "./vendors/normalize";
-@import "./bases/typographie";
 @import "./layout/header-acceuil";
 @import "./layout/media-queries/header-acceuil-media";
-@import "./layout/description-head";
-@import "./layout/media-queries/description-head-media";
-@import "./layout/restos-acceuil";
-@import "./layout/media-queries/resto-acceuil-media";
 @import "./layout/foot";
 @import "./layout/media-queries/foot-media";
+@import "./pages/description-head";
+@import "./pages/media/description-head-media";
+@import "./pages/restos-acceuil";
+@import "./pages/media/resto-acceuil-media";
 
