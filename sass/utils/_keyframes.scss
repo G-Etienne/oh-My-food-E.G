@@ -30,7 +30,7 @@
 }
 @keyframes check-rotate{
     0%{
-        transform: translateX(0px) scaleX(0) rotate(180deg);
+        transform: translateX(0px) scaleX(0) rotate(-360deg);
     }
     100%{
         transform: translateX(-20px) scaleX(1) rotate(0deg);
