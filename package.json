@@ -4,7 +4,7 @@
   "description": "projet 3 d'openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "sass": "sass --watch ./sass/main_resto.scss:./css/style-resto.css",
     "prefix": "postcss ./css/style-resto.css --use autoprefixer -d ./css"
   },
   "repository": {
