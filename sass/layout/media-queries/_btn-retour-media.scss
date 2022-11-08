@@ -1,3 +1,5 @@
+/* bouton de retour vers l'acceuil, media queries */
+
 @include responsive(tablette){
     .heading__retour-acceuil{
         font-size: $size-logo-retour * 1.3;

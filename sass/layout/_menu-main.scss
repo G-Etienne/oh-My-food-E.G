@@ -28,8 +28,7 @@
         }
     }
 }
-/* partie contenant les différentes propositions */
-/* proposition 1 */
+/* partie contenant les différentes propositions de plats */
 .plate{
     max-width: 1000px;
     margin: auto;
@@ -146,6 +145,7 @@
 .four-apparition{
     animation: apparition 1000ms 600ms cubic-bezier(.02,.73,.46,1.06) both ;
 }
+/* bouton commander */
 .btn-commande{
     @include display-center;
     @include color-btn;
@@ -155,4 +155,9 @@
     margin: auto;
     border-radius: 25px;
     margin-top: 10px;
+    box-shadow: lighten($shadow-head, 5%) 5px 5px 10px;
+    &:hover{
+        opacity: 0.9;
+        box-shadow: darken($shadow-head, 10%) 5px 5px 10px;
+    }
 }

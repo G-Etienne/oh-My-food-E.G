@@ -454,7 +454,7 @@ a {
   height: 300%;
   display: flex;
   justify-content: center;
-  animation: gone 200ms 3000ms ease-in-out both;
+  animation: gone 0ms 3000ms ease-in-out both;
   /* div contenant les cercles anim */
 }
 .animation__circle {
@@ -570,6 +570,7 @@ a {
   margin-top: 10px;
 }
 
+/* fichier media querie pour la partie header avec le logo oh my food */
 @media screen and (min-width: 768px) {
   .heading {
     height: 94.25px;
@@ -738,6 +739,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: #d5d4d4 5px 5px 10px;
+}
+.description__company-resto:hover {
+  opacity: 0.9;
+  box-shadow: #afadad 5px 5px 10px;
 }
 .description__function {
   padding-bottom: 45px;

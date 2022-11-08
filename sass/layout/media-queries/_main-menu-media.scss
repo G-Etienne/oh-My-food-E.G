@@ -1,3 +1,5 @@
+/* media-queries partie centrale de la page menu (plat, assiette, bouton commander).
+/* media query tablette */
 @include responsive(tablette){
     .menu{
         &-plats{
@@ -36,6 +38,7 @@
             }
         }   
     }
+    /* option j'aime */
     .color-heart-btn-resto{
         right: 50px;
     }
@@ -43,6 +46,7 @@
         right: 55px;
         font-size: $size-heart * 1.2;
     }
+    /* bouton commander */
     .btn-commande{
         width: 300px;
         height: 75px;
@@ -52,7 +56,7 @@
         margin-bottom: 30px;
     }
 }
-// desktop
+/* media-query desktop */
 @include responsive(desktop){
     .menu{
         &__image{

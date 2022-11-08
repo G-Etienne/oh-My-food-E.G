@@ -63,6 +63,11 @@
             min-width: $min-width-btn;
             @include color-btn;
             @include display-center;
+            box-shadow: lighten($shadow-head, 5%) 5px 5px 10px;
+            &:hover{
+                opacity: 0.9;
+                box-shadow: darken($shadow-head, 10%) 5px 5px 10px;
+            }
         }
     }
     /* ...... Explication sur l'utilisation du site ....... */

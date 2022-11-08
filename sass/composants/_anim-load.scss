@@ -11,7 +11,7 @@
     height: 300%;
     display: flex;
     justify-content: center;
-    animation: gone 200ms 3000ms ease-in-out both;
+    animation: gone 0ms 3000ms ease-in-out both;
     /* div contenant les cercles anim */
     &__circle{      
         position: absolute;
